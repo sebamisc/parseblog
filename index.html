@@ -79,10 +79,22 @@
 								<a href="#">Back to top</a>
 							</p>
 						</footer>
+
+						<script id="blogs-tpl" type="text/x-handlebars-template">
+						{{#each blog}}
+							<div class="blog-post">
+								<h2 class="blog-post-title"><a href="#">{{title}}</a></h2>
+								<p class="blog-post-meta">At time by an author</p>
+								<div>{{{content}}}</div>
+							</div>
+							{{/each}}
+						</script>
+
 						<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 						<!-- Include all compiled plugins (below), or include individual files as needed -->
 						<script src="js/bootstrap.min.js"></script>
 						<script src="js/blog.js"></script>
 						<script src="//www.parsecdn.com/js/parse-1.2.19.min.js"></script>
+						<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
 					</body>
 				</html>
